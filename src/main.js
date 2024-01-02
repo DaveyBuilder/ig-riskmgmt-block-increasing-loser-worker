@@ -45,7 +45,7 @@ export async function executeScheduledTask(request, env, ctx, usingDemoAccount) 
             }
 
             if (difference <= 0) {
-                if (instrument !== 'Apple Inc (All Sessions)' && instrument !== 'EU Stocks 50' && instrument !== 'Alphabet Inc - A (All Sessions)' && instrument !== 'USD/JPY') {
+                if (instrument !== 'EU Stocks 50' && instrument !== 'Alphabet Inc - A (All Sessions)' && instrument !== 'USD/JPY') {
                     // If so, push the current position to the positionsForClosure array
                     positionsForClosure.push(positions[i]);
                 }
