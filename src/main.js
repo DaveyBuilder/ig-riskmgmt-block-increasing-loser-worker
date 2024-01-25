@@ -45,10 +45,8 @@ export async function executeScheduledTask(request, env, ctx, usingDemoAccount) 
             }
 
             if (difference <= 0) {
-                if (instrument !== 'EU Stocks 50') {
-                    // If so, push the current position to the positionsForClosure array
-                    positionsForClosure.push(positions[i]);
-                }
+                // If so, push the current position to the positionsForClosure array
+                positionsForClosure.push(positions[i]);
             }
 
         }
